@@ -3,17 +3,21 @@
     font-size: 36px;
     line-height: 60px;
 
-    &_fs14px {
+    &_fz14px {
         font-size: 14px;
         line-height: 21px;
     }
 
-    &_fs16px {
+    &_fz16px {
         font-size: 16px;
         line-height: 24px;
     }
 
-    &_fs48px {
+    &_fz36px {
+        font-size: 36px;
+    }
+
+    &_fz48px {
         font-size: 48px;
     }
 }
