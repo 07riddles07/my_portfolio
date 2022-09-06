@@ -36,10 +36,12 @@
 
 <body>
     <aside class="side_panel">
-        <a href="#" class="side_panel__link"><img src="assets/icons/social/telegram.svg" alt="Telegram">
+        <a href="https://t.me/Riddles_in_the_dark" class="side_panel__link" target="_blank"><img
+                src="assets/icons/social/telegram.svg" alt="Telegram">
         </a>
         <a href="#" class="side_panel__link"><img src="assets/icons/social/linkedin.svg" alt="Linkedin"></a>
-        <a href="#" class="side_panel__link"><img src="assets/icons/social/github.svg" alt="GitHub">
+        <a href="https://github.com/07arwen07" class="side_panel__link" target="_blank"><img
+                src="assets/icons/social/github.svg" alt="GitHub">
         </a>
         <div class="side_panel__divider"></div>
         <div class="side_panel__text"><span>Социальные сети</span></div>
@@ -55,23 +57,26 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ОБО МНЕ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <section class="about-me" id="about-me">
+                        <li class="menu__link"><a href="#about_me">ОБО МНЕ</a></li>
+                        <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                        <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                        <li class="menu__link"><a href="#cv">МОЙ ОПЫТ</a></li>
+                        <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
-                <a href="#"><img src="assets/icons/social/github.svg" alt=""></a>
-                <a href="#"><img src="assets/icons/social/linkedin.svg" alt=""></a>
-                <a href="#"><img src="assets/icons/social/telegram.svg" alt=""></a>
+                <a href="https://github.com/07arwen07" target="_blank"><img src="assets/icons/social/github.svg"
+                        alt="My GitHub"></a>
+                <a href="#"><img src="assets/icons/social/linkedin.svg" alt="My Linkedin"></a>
+                <a href="https://t.me/Riddles_in_the_dark" target="_blank"><img src="assets/icons/social/telegram.svg"
+                        alt="My Telegram"></a>
             </div>
         </div>
 
         <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="hamburger">
             <span></span>
             <span class="long-dash"></span>
@@ -79,29 +84,29 @@
         </div>
         <div class="container">
             <div class="title title_fz16px promo__subtitle">Меня зовут Анастасия</div>
-            <h1 class="title title_fz48px promo__title">Я web-разработчик из ...</h1>
+            <h1 class="title title_fz48px promo__title">Я web-разработчик</h1>
             <div class="promo__buttons">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Обо мне</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about_me" class="promo__link">Обо мне</a>
             </div>
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about_me">
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
-                    <img src="assets/img/main_photo.jpg" alt="My photo">
+                    <img src="assets/img/main_photo.png" alt="My photo">
                 </div>
                 <div class="about-me__descr">
-                    <h2 class="title title_fz16px about-me__title">Обо мне</h2>
+                    <h2 class="title title_fz16px about-me__title" id="about-me">Обо мне</h2>
                     <div class="title title_fz36px about-me__subtitle">Меня зовут Анастасия</div>
                     <div class="divider"></div>
-                    <p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    <p class="about-me__text"> Увлеченный начинающий frontend-разработчик с желанием учиться и расти в
+                        сплоченной и открытой к идеям команде. Уверенный пользователь HTML, CSS и JavaScript. Отлично
+                        справляюсь с созданием идеальных по пикселям дизайнов и решением проблем кроссбраузерной
+                        совместимости. Мне нравится искать интересные решения и создавать необычный дизайн при помощи
+                        css.
                     </p>
                 </div>
                 <div class="about-me__skills">
@@ -111,9 +116,7 @@
                         </div>
                         <div>
                             <div class="title title_fz14px">Web-разработка</div>
-                            <div class="about-me__skills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="about-me__skills-text">Javascript, Node.js, React, jQuery</div>
                         </div>
                     </div>
                     <div class="about-me__skills-item">
@@ -121,9 +124,8 @@
                             <img src="assets/icons/about_me/mobile_dev.svg" alt="Mobile development">
                         </div>
                         <div>
-                            <div class="title title_fz14px">Разработка приложений</div>
-                            <p class="about-me__skills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="title title_fz14px">Frontend-разработка</div>
+                            <p class="about-me__skills-text">HTML, CSS, Bootstrap, LESS, SASS, БЭМ</p>
                         </div>
                     </div>
                     <div class="about-me__skills-item">
@@ -132,8 +134,7 @@
                         </div>
                         <div>
                             <div class="title title_fz14px">UI/UX Design</div>
-                            <p class="about-me__skills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="about-me__skills-text">Photoshop, Figma, Usability Testing</p>
                         </div>
                     </div>
                 </div>
@@ -141,89 +142,51 @@
         </div>
     </section>
 
-    <section class="cv">
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="title title_fz16px cv__title">Опыт</h2>
-            <div class="title title_fz36px cv__subtitle">Чем я буду полезна</div>
+            <h2 class="title title_fz16px portfolio__title" id="portfolio">Портфолио</h2>
+            <div class="title title_fz36px portfolio__subtitle">Мои работы</div>
             <div class="divider"></div>
-            <div class="cv__wrapper">
-                <div class="cv__column">
-                    <h3 class="title title_fz20px cv__column-title">Образование</h3>
-                    <ul>
-                        <li>
-                            <div class="cv__item">
-                                <div class="cv__item-head">
-                                    <div class="cv__item-icon">
-                                        <img src="assets/icons/experience/university.svg" alt="University">
-                                    </div>
-                                    <h4 class="title title_fz14px">МГТУ им. Н. Э. Баумана</h4>
-                                    <div class="cv__item-location">Диплом магистра | Москва (2014-2020)</div>
-                                </div>
-                                <p class="cv__item-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do eiusmo.
-                                </p>
-                                <div class="cv__item">
-                                    <div class="cv__item-head">
-                                        <div class="cv__item-icon">
-                                            <img src="assets/icons/experience/courses.svg" alt="Courses">
-                                        </div>
-                                        <h4 class="title title_fz14px">Udemy</h4>
-                                        <div class="cv__item-location">Курсы по Web-разработке</div>
-                                    </div>
-                                    <p class="cv__item-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit, sed do eiusmo.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cv__column">
-                    <div class="cv__column">
-                        <h3 class="title title_fz20px cv__column-title">Опыт работы</h3>
-                        <ul>
-                            <li>
-                                <div class="cv__item">
-                                    <div class="cv__item-head">
-                                        <div class="cv__item-icon">
-                                            <img src="assets/icons/experience/developer.svg" alt="University">
-                                        </div>
-                                        <h4 class="title title_fz14px">Front-End Developer</h4>
-                                        <div class="cv__item-location">EPAM | Москва (2018-2019)</div>
-                                    </div>
-                                    <p class="cv__item-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmo.
-                                    </p>
-                                    <div class="cv__item">
-                                        <div class="cv__item-head">
-                                            <div class="cv__item-icon">
-                                                <img src="assets/icons/experience/designer.svg" alt="Courses">
-                                            </div>
-                                            <h4 class="title title_fz14px">UI/UX Designer</h4>
-                                            <div class="cv__item-location">Squad Team | Москва (2018)</div>
-                                        </div>
-                                        <p class="cv__item-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-                                            amet, consectetur adipiscing elit, sed do eiusmo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+            <div class="portfolio__wrapper">
+                <a href="https://07arwen07.github.io/split_bill_app/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/split_bill.jpg" alt="Split a bill">
+                </a>
+                <a href="https://07arwen07.github.io/heart_rate_monitor/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/pulse.jpg" alt="pulse">
+                </a>
+                <a href="https://07arwen07.github.io/countdownTimer_BMW_comingSoon/" class="portfolio__item"
+                    target="_blank">
+                    <img src="assets/img/works/bmw.jpg" alt="BMW">
+                </a>
+                <a href="https://07arwen07.github.io/mini-shop-js-project/" class="portfolio__item vertical"
+                    target="blank">
+                    <img src="assets/img/works/watches.jpg" alt="Watches">
+                </a>
+                <a href="https://07arwen07.github.io/recipesSearchApp/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/recipes.jpg" alt="Recipes">
+                </a>
+                <a href="https://07arwen07.github.io/toDoList/" class="portfolio__item horizontal" target="_blank">
+                    <img src="assets/img/works/to_do_list.jpg" alt="To Do List">
+                </a>
+                <a href="https://07arwen07.github.io/split_bill_app/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/split_bill.jpg" alt="Split a bill">
+                </a>
+                <a href="https://07arwen07.github.io/heart_rate_monitor/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/pulse.jpg" alt="pulse">
+                </a>
+                <a href="https://07arwen07.github.io/countdownTimer_BMW_comingSoon/" class="portfolio__item"
+                    target="_blank">
+                    <img src="assets/img/works/bmw.jpg" alt="BMW">
+                </a>
+                <a href="https://07arwen07.github.io/recipesSearchApp/" class="portfolio__item" target="_blank">
+                    <img src="assets/img/works/recipes.jpg" alt="Recipes">
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fz16px skills__title">Навыки</h2>
             <div class="title title_fz36px skills__subtitle">Что я использую в работе</div>
@@ -249,7 +212,7 @@
                     <div class="skills__item-img">
                         <img src="assets/icons/skills/js.svg" alt="java script">
                     </div>
-                    <h3 class="title title_fz14px">Java Script</h3>
+                    <h3 class="title title_fz14px">JavaScript</h3>
                     <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки,
                         получение данных от сервера и многое другое</p>
                 </div>
@@ -279,31 +242,32 @@
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
-                        <img src="assets/icons/skills/mongo.db.svg" alt="Mongo.db">
+                        <img src="assets/icons/skills/bootstrap.svg" alt="Bootstrap">
                     </div>
-                    <h3 class="title title_fz14px">Mongo.db</h3>
-                    <p>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</p>
+                    <h3 class="title title_fz14px">Bootstrap</h3>
+                    <p>Это открытый и бесплатный HTML, CSS и JS фреймворк, который используется для быстрого создания
+                        адаптивных дизайнов сайтов</p>
                 </div>
             </div>
-            
+
             <div class="skills__ratings">
                 <div class="skills__ratings-item">
                     <div class="title title_fz14px skills__ratings-title">Создание сайтов</div>
-                    <div class="skills__ratings-counter">100%</div>
-                    <div class="skills__ratings-line">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="skills__ratings-item">
-                    <div class="title title_fz14px skills__ratings-title">Создание приложений</div>
                     <div class="skills__ratings-counter">85%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
                 </div>
                 <div class="skills__ratings-item">
+                    <div class="title title_fz14px skills__ratings-title">Создание приложений</div>
+                    <div class="skills__ratings-counter">75%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item">
                     <div class="title title_fz14px skills__ratings-title">Работа с данными</div>
-                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-counter">80%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
@@ -333,40 +297,89 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="cv" id="cv">
         <div class="container">
-            <h2 class="title title_fz16px portfolio__title">Портфолио</h2>
-            <div class="title title_fz36px portfolio__subtitle">Мои работы</div>
+            <h2 class="title title_fz16px cv__title">Опыт</h2>
+            <div class="title title_fz36px cv__subtitle">Чем я буду полезна</div>
             <div class="divider"></div>
+            <div class="cv__wrapper">
+                <div class="cv__column">
+                    <h3 class="title title_fz20px cv__column-title">Образование</h3>
+                    <ul>
+                        <li>
+                            <div class="cv__item">
+                                <div class="cv__item-head">
+                                    <div class="cv__item-icon">
+                                        <img src="assets/icons/experience/courses.svg" alt="Courses">
+                                    </div>
+                                    <h4 class="title title_fz14px">Udemy</h4>
+                                    <div class="cv__item-location">Курсы по Web-разработке (2022)</div>
+                                </div>
+                                <p class="cv__item-body">
 
-            <div class="portfolio__wrapper">
-                <a href="#" class="portfolio__item">
-                    <img src="assets/img/works/uber.jpg" alt="uber">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="assets/img/works/pulse.jpg" alt="pulse">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="assets/img/works/bread.jpg" alt="test">
-                </a>
-                <a href="#" class="portfolio__item vertical">
-                    <img src="assets/img/works/plans.jpg" alt="test">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="assets/img/works/ipad.jpg" alt="test">
-                </a>
-                <a href="#" class="portfolio__item horizontal">
-                    <img src="assets/img/works/mac.jpg" alt="test">
-                </a>
+                                </p>
+                                <div class="cv__item">
+                                    <div class="cv__item-head">
+                                        <div class="cv__item-icon">
+                                            <img src="assets/icons/experience/university.svg" alt="University">
+                                        </div>
+                                        <h4 class="title title_fz14px">КГУФКСТ</h4>
+                                        <div class="cv__item-location">Диплом специалиста | Краснодар (2008-2013)</div>
+                                    </div>
+                                    <p class="cv__item-body">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cv__column">
+                    <div class="cv__column">
+                        <h3 class="title title_fz20px cv__column-title">Опыт работы</h3>
+                        <ul>
+                            <li>
+                                <div class="cv__item">
+                                    <div class="cv__item-head">
+                                        <div class="cv__item-icon">
+                                            <img src="assets/icons/experience/developer.svg" alt="University">
+                                        </div>
+                                        <h4 class="title title_fz14px">Преподаватель английского языка </h4>
+                                        <div class="cv__item-location">Младший преподаватель (2016-2018)
+                                            <br>Академический директор (2019-2020)<br>Частный преподаватель (2020-2022)
+                                        </div>
+                                    </div>
+                                    <p class="cv__item-body">
+
+                                    </p>
+                                    <div class="cv__item">
+                                        <div class="cv__item-head">
+                                            <div class="cv__item-icon">
+                                                <img src="assets/icons/experience/designer.svg" alt="Courses">
+                                            </div>
+                                            <h4 class="title title_fz14px">Педагог группы продленного дня и помощник
+                                                воспитателя в детских садах </h4>
+                                            <div class="cv__item-location">YMCA Brunel Group | Bath, England (2016-2017)
+                                            </div>
+                                        </div>
+                                        <p class="cv__item-body">
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="assets/img/main_photo.jpg" alt="photo">
+                    <img src="assets/img/main_photo.png" alt="photo">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16px contacts__title">Контакты</h2>
@@ -377,21 +390,17 @@
                         Любым удобным для вас способом:
                     </div>
                     <div class="contacts__social">
-                        <a href="#" class="contacts__link">
-                            <img src="assets/icons/social/github.svg" alt="facebook">
-                        </a>
-                        <a href="#" class="contacts__link">
-                            <img src="assets/icons/social/linkedin.svg" alt="telegram">
-                        </a>
-                        <a href="#" class="contacts__link">
-                            <img src="assets/icons/social/telegram.svg" alt="instagram">
-                        </a>
+                        <a href="https://github.com/07arwen07" target="_blank"><img src="assets/icons/social/github.svg"
+                                alt="My GitHub"></a>
+                        <a href="#"><img src="assets/icons/social/linkedin.svg" alt="My Linkedin"></a>
+                        <a href="https://t.me/Riddles_in_the_dark" target="_blank"><img
+                                src="assets/icons/social/telegram.svg" alt="My Telegram"></a>
                     </div>
                     <div class="title title_fz14px contacts__text">
                         Или оставьте ваши данные и я сама вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form action="https://formspree.io/f/mgeqvdvz" class="contacts__form" method="POST" target="_blank">
                         <div class="contacts__input">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
@@ -409,7 +418,8 @@
                             <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__privacy-policy">
                                 <input required type="checkbox">
-                                <span>Я согласен(а) с <a href="/privacy-policy.html" target="_blank">политикой конфиденциальности</a></span>
+                                <span>Я согласен(а) с <a href="/privacy-policy.html" target="_blank">политикой
+                                        конфиденциальности</a></span>
                             </div>
                         </div>
                     </form>
@@ -418,6 +428,9 @@
         </div>
     </section>
 
+    <a href="#up" class="page_up" id="page_up"><img src="assets/page_up.svg" alt="page up"></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
