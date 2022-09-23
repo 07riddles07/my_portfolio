@@ -1,12 +1,24 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../assets/img/main_background.jpg') no-repeat 50%/cover;
     padding-top: 205px;
+
+    &::after {
+        content: "";
+        background: url('../assets/img/main_background.jpg') no-repeat 50%/cover;
+        opacity: .6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
     &__title {
         width: 530px;
         margin-top: 9px;
+
         .letter {
             display: inline-block;
         }
