@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {
     const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
+      menuOverlay = document.querySelector('.menu__overlay'),
       close = document.querySelector('.menu__close');
 
 hamburger.addEventListener('click', () => {
@@ -9,6 +10,12 @@ hamburger.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+menuOverlay.addEventListener('click', (e) => {
+    if (e.target === menuOverlay) {
+        menu.classList.remove('active');
+    }
 });
 
 const counters = document.querySelectorAll('.skills__ratings-counter'),
